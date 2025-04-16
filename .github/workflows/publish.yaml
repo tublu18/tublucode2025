@@ -55,7 +55,7 @@ jobs:
   publish-pypi:
     needs: [provenance]
     # Wait for approval before attempting to upload to PyPI. This allows reviewing the
-    # files in the draft release.
+    # #files in the draft release.
     environment:
       name: publish
       url: https://pypi.org/project/Flask/${{ github.ref_name }}
